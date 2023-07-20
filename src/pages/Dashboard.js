@@ -9,8 +9,21 @@ const Dashboard = () => {
             title: 'Chelsea Player Training Vid',
             owner: 'Poch',
             avatar: '',
+            status : 'hold',
+            priority: 2,
+            progress:15,
+            description: 'Analyze chelsea training vids',
+            timestamp: '2023-07-19'
+
+        },
+        {
+            category: 'Q1 2022',
+            color: 'blue',
+            title: 'Chelsea Player Training Vid',
+            owner: 'Poch',
+            avatar: '',
             status : 'done',
-            priority: 5,
+            priority: 1,
             progress: 25,
             description: 'Analyze chelsea training vids',
             timestamp: '2023-07-19'
@@ -23,20 +36,7 @@ const Dashboard = () => {
             owner: 'Poch',
             avatar: '',
             status : 'done',
-            priority: 5,
-            progress: 25,
-            description: 'Analyze chelsea training vids',
-            timestamp: '2023-07-19'
-
-        },
-        {
-            category: 'Q1 2022',
-            color: 'blue',
-            title: 'Chelsea Player Training Vid',
-            owner: 'Poch',
-            avatar: '',
-            status : 'done',
-            priority: 5,
+            priority: 4,
             progress: 25,
             description: 'Analyze chelsea training vids',
             timestamp: '2023-07-19'
