@@ -71,6 +71,13 @@ const Dashboard = () => {
         }
 
     ]
+    const colors = [
+        'rgb(255,179,185)',
+        'rgb(55,19,185)',
+        'rgb(25,179,185)',
+        'rgb(205,179,115)',
+        'rgb(255,179,185)'
+    ]
 
     const uniqueCategories = [
         ...new Set(tickets?.map(({ category }) => category)),
@@ -84,11 +91,11 @@ const Dashboard = () => {
                 {tickets && uniqueCategories?.map((uniqueCategory , categoryIndex) => (
                     <div key = {categoryIndex}>
                         <h3>{uniqueCategory}</h3>
-                        {tickets.filter(ticket => ticket.category == uniqueCategory)
+                        {tickets.filter(ticket => ticket.category === uniqueCategory)
                             .map((filteredTicket , _index) => (
                                 <TicketCard
                                     id ={_index}
-                                    color = {filteredTicket.color}
+                                    color = {colors[categoryIndex]}
                                     ticket = {filteredTicket}
                     />))}
                     </div>
